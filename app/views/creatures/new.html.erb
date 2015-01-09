@@ -1,0 +1,7 @@
+<h1>Add your very own creature!</h1>
+
+<%= form_for :creature, url: creatures_path do |f| %>
+  <%= f.text_field :name, :placeholder => "Enter Name" %><br>
+  <%= f.text_field :description, :placeholder => "Enter Description" %><br>
+  <%= f.submit %>
+<% end %>

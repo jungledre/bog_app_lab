@@ -1,0 +1,11 @@
+<h2>Meet <%= @creature_list[0].name %>!</h2>
+<p><%= @eye %></p>
+<p><%= @nose %><%= @nose %><%= @nose %></p>
+<p><%= @hair %></p>
+
+Other creatures you might want to visit
+<% @creature_list.each do |c| %>
+  <% if c.id > 1 %>
+    <li><%= c.name %>: <%= c.description %></li>
+  <% end %>
+<% end %>
